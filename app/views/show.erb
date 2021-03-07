@@ -3,3 +3,9 @@
 <h3><%=@recipe.cook_time%></h3>
 
 <a href="/edit/<%=@recipe.id%>">Edit</a>
+
+
+<form method="post" value="/delete/<%=@recipe.id%>">
+  <input type="hidden" id="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete">
+</form>
